@@ -1,4 +1,4 @@
-import dados from "../models/dados.js";
+import dados from "../data/models/dados.js";
 const { eventos } = dados;
 
 // GET /eventos - Listar todos os eventos com filtros
@@ -42,7 +42,7 @@ const getAllEventos = (req, res) => {
         );
     }
 
-    // Filtro por preço
+    // Filtro por preco
     if (preco) {
         resultado = resultado.filter(eventos => 
             eventos.preco.toLowerCase() === preco.toLowerCase()
@@ -55,6 +55,7 @@ const getAllEventos = (req, res) => {
             eventos.organizador.toLowerCase() === organizador.toLowerCase()
         );
     }
+
 
 
     res.status(200).json({
@@ -96,15 +97,20 @@ const createEvento = (req, res) => {
     const { nome, dataEvento, local, categoria, capacidade, preco, organizador } = req.body;
 
     // Validações obrigatórias básicas
-    if (!nome || !dataEvento || !local || !categoria || !capacidade || !preco ||  !organizador) {
+    if (!capacidade > 0 || !nome || !dataEvento || !local || !categoria || !capacidade || !preco ||  !organizador) {
         return res.status(400).json({
             success: false,
             message: "Nome, dataEvento, local, categoria, capacidade, preco, organizador são obrigatórios!"
         });
     }
 
+
+
     // Gerar novo ID simples
     const novoId = eventos.length + 1;
+
+    
+ 
 
     // Criar novo Evemto
     const novoEvento = {
@@ -222,16 +228,8 @@ const deleteEvento = (req, res) => {
 
 
 
-// Filtro por data de evento
 
-
-
-
-
-
-
-
-
+  
 
 
 
