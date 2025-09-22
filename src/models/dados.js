@@ -1,102 +1,102 @@
 const eventos = [
     {
         id: 1,
-        nome: "Conferência Tech Summit 2026",
-        dataEvento: "2026-03-10T09:00:00", // Manhã
-        local: "Centro de Convenções São Paulo",
-        categoria: "Conferência",
+        nome: "Conferência Tech Summit",
+        dataEvento: "2025-12-10T09:00:00",
+        local: "São Paulo",
+        categoria: "Palestra",
         capacidade: 5000,
-        preco: 499.90,
+        preco: 499.90, // Faixa: R$200+
         organizador: "InovaTech Solutions"
     },
     {
         id: 2,
         nome: "Workshop: Introdução ao React Native",
-        dataEvento: "2026-04-05T14:30:00", // Tarde
-        local: "Sala de Treinamentos Alpha",
-        categoria: "Workshop",
+        dataEvento: "2025-09-24T14:30:00",
+        local: "Valinhos",
+        categoria: "Palestra",
         capacidade: 30,
-        preco: 99.50,
+        preco: 120.00, // Faixa: R$50-200
         organizador: "Desenvolve Mais"
     },
     {
         id: 3,
         nome: "Show de Rock: Banda 'Os Códigos'",
-        dataEvento: "2026-07-20T22:00:00", // Noite
-        local: "Estádio Municipal",
+        dataEvento: "2025-11-20T22:00:00",
+        local: "Rio de Janeiro",
         categoria: "Show",
         capacidade: 25000,
-        preco: 150.00,
+        preco: 250.00, // Faixa: R$200+
         organizador: "Mega Eventos"
     },
     {
         id: 4,
         nome: "Feira de Artesanato Local",
-        dataEvento: "2026-09-28T10:00:00", // Manhã
-        local: "Praça Central",
-        categoria: "Feira",
+        dataEvento: "2025-09-28T10:00:00",
+        local: "Campinas",
+        categoria: "Festa",
         capacidade: 0,
-        preco: 0.00,
+        preco: 0.00, // Faixa: Grátis
         organizador: "Associação de Moradores"
     },
     {
         id: 5,
-        nome: "Maratona de Programação Interfacultades",
-        dataEvento: "2026-05-15T08:00:00",
-        local: "Auditório Principal da Universidade",
-        categoria: "Competição",
+        nome: "Maratona de Programação",
+        dataEvento: "2025-10-15T08:00:00",
+        local: "São Paulo",
+        categoria: "Esporte",
         capacidade: 120,
-        preco: 50.00,
+        preco: 45.00, // Faixa: até R$50
         organizador: "Núcleo de Computação UFG"
     },
     {
         id: 6,
-        nome: "Lançamento do Livro: 'A Jornada do Dev'",
-        dataEvento: "2026-06-01T19:30:00",
-        local: "Livraria Cultura - Shopping Center",
-        categoria: "Lançamento",
+        nome: "Lançamento do Livro",
+        dataEvento: "2025-10-01T19:30:00",
+        local: "Valinhos",
+        categoria: "Palestra",
         capacidade: 80,
-        preco: 0.00,
+        preco: 0.00, // Faixa: Grátis
         organizador: "Editora XYZ"
     },
     {
         id: 7,
-        nome: "Festival Gastronômico de Inverno",
-        dataEvento: "2026-08-05T18:00:00",
-        local: "Parque da Cidade",
-        categoria: "Festival",
+        nome: "Festival Gastronômico de Verão",
+        dataEvento: "2025-12-05T18:00:00",
+        local: "Rio de Janeiro",
+        categoria: "Festa",
         capacidade: 8000,
-        preco: 10.00, 
+        preco: 10.00, // Faixa: até R$50
         organizador: "Secretaria de Turismo"
     },
     {
         id: 8,
-        nome: "Webinar: Segurança de Dados Pessoais (LGPD)",
-        dataEvento: "2026-03-25T17:00:00",
-        local: "Online (Plataforma Zoom)",
-        categoria: "Webinar",
+        nome: "Webinar: LGPD",
+        dataEvento: "2025-09-25T17:00:00",
+        local: "Online",
+        categoria: "Palestra",
         capacidade: 1000,
-        preco: 0.00,
+        preco: 0.00, // Faixa: Grátis
         organizador: "InfoSec Consultoria"
     },
     {
         id: 9,
-        nome: "Torneio de E-Sports: League of Legends",
-        dataEvento: "2026-11-01T13:00:00",
-        local: "Arena Gamer Pro",
-        categoria: "E-Sports",
+        nome: "Torneio de E-Sports",
+        dataEvento: "2025-11-01T13:00:00",
+        local: "Campinas",
+        categoria: "Esporte",
         capacidade: 300,
-        preco: 25.00,
+        preco: 80.00, // Faixa: R$50-200
         organizador: "E-Sports Brasil"
     },
     {
         id: 10,
         nome: "Palestra: Produtividade com IA",
-        dataEvento: "2026-12-12T15:30:00",
-        local: "Auditório da Aceleradora",
+        dataEvento: "2025-10-20T15:30:00",
+        local: "São Paulo",
         categoria: "Palestra",
         capacidade: 60,
-        preco: 75.00,
+        preco: 180.00, // Faixa: R$50-200
         organizador: "Startup Hub"
     }
 ];
