@@ -95,9 +95,10 @@ const getEventoById = (req, res) => {
 // POST /eventos - Cadastrar novo evento
 const createEvento = (req, res) => {
     const { nome, dataEvento, local, categoria, capacidade, preco, organizador } = req.body;
+    const hoje = new Date();
 
     // Validações obrigatórias básicas
-    if (!capacidade > 0 || !nome || !dataEvento || !local || !categoria || !capacidade || !preco ||  !organizador) {
+    if (!capacidade > 0 || dataEvento > hoje ||!nome || !dataEvento || !local || !categoria || !capacidade || !preco ||  !organizador) {
         return res.status(400).json({
             success: false,
             message: "Nome, dataEvento, local, categoria, capacidade, preco, organizador são obrigatórios!"
@@ -110,7 +111,6 @@ const createEvento = (req, res) => {
     const novoId = eventos.length + 1;
 
     
- 
 
     // Criar novo Evemto
     const novoEvento = {

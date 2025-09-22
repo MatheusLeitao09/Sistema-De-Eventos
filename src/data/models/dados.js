@@ -2,7 +2,7 @@ const eventos = [
     {
         id: 1,
         nome: "Conferência Tech Summit",
-        dataEvento: "eventos desta semana",
+        dataEvento: "evento desta semana",
         local: "São Paulo",
         categoria: "Palestra",
         capacidade: 5000,
@@ -12,7 +12,7 @@ const eventos = [
     {
         id: 2,
         nome: "Workshop: Introdução ao React Native",
-        dataEvento: "eventos desta semana",
+        dataEvento: "2025-09-24T14:30:00",
         local: "Valinhos",
         categoria: "Palestra",
         capacidade: 30,
@@ -22,7 +22,7 @@ const eventos = [
     {
         id: 3,
         nome: "Show de Rock: Banda 'Os Códigos'",
-        dataEvento: "eventos desta semana",
+        dataEvento: "evento desta semana",
         local: "Rio de Janeiro",
         categoria: "Show",
         capacidade: 25000,
@@ -32,7 +32,7 @@ const eventos = [
     {
         id: 4,
         nome: "Feira de Artesanato Local",
-        dataEvento: "deste mês",
+        dataEvento: "evento desta semana",
         local: "Campinas",
         categoria: "Festa",
         capacidade: 0,
@@ -46,13 +46,13 @@ const eventos = [
         local: "São Paulo",
         categoria: "Esporte",
         capacidade: 120,
-        preco: "grátis", 
+        preco: "até R$50", 
         organizador: "Núcleo de Computação UFG"
     },
     {
         id: 6,
         nome: "Lançamento do Livro",
-        dataEvento: "2025-10-01T19:30:00",
+        dataEvento: " deste mês",
         local: "Valinhos",
         categoria: "Palestra",
         capacidade: 80,
@@ -62,7 +62,7 @@ const eventos = [
     {
         id: 7,
         nome: "Festival Gastronômico de Verão",
-        dataEvento: "2025-12-05T18:00:00",
+        dataEvento: " deste mês",
         local: "Rio de Janeiro",
         categoria: "Festa",
         capacidade: 8000,
@@ -82,7 +82,7 @@ const eventos = [
     {
         id: 9,
         nome: "Torneio de E-Sports",
-        dataEvento: "2025-11-01T13:00:00",
+        dataEvento: " próximos 3 meses",
         local: "Campinas",
         categoria: "Esporte",
         capacidade: 300,
@@ -92,7 +92,7 @@ const eventos = [
     {
         id: 10,
         nome: "Palestra: Produtividade com IA",
-        dataEvento: "2025-10-20T15:30:00",
+        dataEvento: " próximos 3 meses",
         local: "São Paulo",
         categoria: "Palestra",
         capacidade: 60,

@@ -9,6 +9,6 @@ router.get("/:id", getEventoById );
 router.get("/", getAllEventos );              
 router.post("/", createEvento, ); 
 router.put("/:id", updateEvento);
-router.delete("/:id",  deleteEvento);    
+router.delete("/:id", deleteEvento);    
 
 export default router;
